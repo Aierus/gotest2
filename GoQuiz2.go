@@ -28,9 +28,9 @@ func Problem1(x int) {
 	fmt.Printf("Summing a slice ***without*** concurrency of len %d took %d\n", len(exSlice), t1.Sub(t0))
 	fmt.Printf("The sum of the slice is %d\n", sum)
 
-	// make channels, defer close channels until done using
-	c1 := make(chan int)
-	c2 := make(chan int)
+	// make buffered channels, defer close channels until done using
+	c1 := make(chan int, x/2)
+	c2 := make(chan int, x/2)
 	defer close(c1)
 	defer close(c2)
 
@@ -64,7 +64,6 @@ func Problem1(x int) {
 			sum += secondhalfsum
 		}
 	}
-
 	t1 = time.Now() // end timing
 	// fmt.Printf("first half == %d\n", firsthalfsum)
 	// fmt.Printf("second half == %d\n", secondhalfsum)
