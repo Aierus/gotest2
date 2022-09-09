@@ -7,13 +7,13 @@ Where x is your input to the program
 
 <b> expected outcome </b>
 `
-Your input is -> 1231
-Summing a slice ***without*** concurrency of len 1231 took 542
-The sum of the slice is 2814405775019430476
-Summing a slice ***with*** concurrency of len 1231 took 360750
-The sum of the slice is 2814405775019430476
-sorting a slice of length 1231 using sort.Sort took 82792
-sorting a slice using sort.SliceStable took 5750
+    - Your input is -> 1231
+    - Summing a slice ***without*** concurrency of len 1231 took 542
+    - The sum of the slice is 2814405775019430476
+    - Summing a slice ***with*** concurrency of len 1231 took 360750
+    - The sum of the slice is 2814405775019430476
+    - sorting a slice of length 1231 using sort.Sort took 82792
+    - sorting a slice using sort.SliceStable took 5750
 `
 
 <b> Question 3 </b>
