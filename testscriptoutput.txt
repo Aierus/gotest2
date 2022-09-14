@@ -1,0 +1,54 @@
+Your input is -> 10
+Summing a slice ***without*** concurrency of len 10 took 160
+The sum of the slice is 3495121568976409429
+Summing a slice ***with*** concurrency of len 10 took 9026
+The sum of the slice is 3495121568976409429
+sorting a slice of length 10 using sort.Sort took 1744
+sorting a slice using sort.SliceStable took 2088
+Your input is -> 100
+Summing a slice ***without*** concurrency of len 100 took 237
+The sum of the slice is -8512317461907585789
+Summing a slice ***with*** concurrency of len 100 took 29571
+The sum of the slice is -8512317461907585789
+sorting a slice of length 100 using sort.Sort took 12808
+sorting a slice using sort.SliceStable took 3410
+Your input is -> 1000
+Summing a slice ***without*** concurrency of len 1000 took 837
+The sum of the slice is 7954704614670800799
+Summing a slice ***with*** concurrency of len 1000 took 166914
+The sum of the slice is 7954704614670800799
+sorting a slice of length 1000 using sort.Sort took 144030
+sorting a slice using sort.SliceStable took 11684
+Your input is -> 10000
+Summing a slice ***without*** concurrency of len 10000 took 7366
+The sum of the slice is 5577328484889285659
+Summing a slice ***with*** concurrency of len 10000 took 1619501
+The sum of the slice is 5577328484889285659
+sorting a slice of length 10000 using sort.Sort took 1383352
+sorting a slice using sort.SliceStable took 72537
+Your input is -> 100000
+Summing a slice ***without*** concurrency of len 100000 took 74750
+The sum of the slice is 2306284875451528512
+Summing a slice ***with*** concurrency of len 100000 took 19532449
+The sum of the slice is 2306284875451528512
+sorting a slice of length 100000 using sort.Sort took 15906720
+sorting a slice using sort.SliceStable took 583658
+Your input is -> 1000000
+Summing a slice ***without*** concurrency of len 1000000 took 1048850
+The sum of the slice is 6087625868611974142
+Summing a slice ***with*** concurrency of len 1000000 took 148873771
+The sum of the slice is 6087625868611974142
+sorting a slice of length 1000000 using sort.Sort took 186904589
+sorting a slice using sort.SliceStable took 7810850
+Your input is -> 10000000
+Summing a slice ***without*** concurrency of len 10000000 took 8810341
+The sum of the slice is -6823986113557364102
+Summing a slice ***with*** concurrency of len 10000000 took 1499280756
+The sum of the slice is -6823986113557364102
+sorting a slice of length 10000000 using sort.Sort took 2151927308
+sorting a slice using sort.SliceStable took 76307577
+Your input is -> 100000000
+Summing a slice ***without*** concurrency of len 100000000 took 88532766
+The sum of the slice is 7774946914637454217
+Summing a slice ***with*** concurrency of len 100000000 took 13913741524
+The sum of the slice is 7774946914637454217

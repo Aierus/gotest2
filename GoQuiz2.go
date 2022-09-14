@@ -33,23 +33,19 @@ func Problem1(x int) {
 	c2 := make(chan int, x/2)
 	defer close(c1)
 	defer close(c2)
-
-	tmp1 := 0
-	tmp2 := 0
+	t0 = time.Now() // start timing
 
 	// go routine to sum first half of slice
 	go func() {
 		for i := 0; i < len(exSlice)/2; i++ {
-			tmp1 = exSlice[i]
-			c1 <- tmp1
+			c1 <- exSlice[i]
 		}
 	}()
 
 	// go routine to sum second half of slice
 	go func() {
 		for i := x - 1; i >= (len(exSlice) / 2); i-- {
-			tmp2 = exSlice[i]
-			c2 <- tmp2
+			c2 <- exSlice[i]
 		}
 	}()
 

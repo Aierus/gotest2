@@ -20,6 +20,10 @@ Where x is your input to the program
 
 The Big-O time analysis from the go documentation holds
 
-When sorting slices (and therefore arrays after conversion), sort.SliceStable quadruples when inputs grow by an order of magnitude. These inputs align with the expected `O(n*n*log(n)*n*log(n)*log(n)) == O(3n * 3log(n))`
+When sorting slices (and therefore arrays after conversion), sort.SliceStable quadruples when inputs grow by an order of magnitude. These inputs align with the expected `O(n*log(n)*n*log(n)*log(n)) == O(3n * 3log(n))`
 
 Sorting using sort.Sort() results in a longer time the larger the slices get, approximately doubling every time x grows an order of magnitude, concurring with the assumption that sort.Sort is O(log(n)) for slices.
+
+Class notes ... 
+Sort O (n * logn)
+Stable O (n * logn * logn) = n * 2logn
